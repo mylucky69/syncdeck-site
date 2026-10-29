@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SyncDeck – Chính sách quyền riêng tư</title>
+<style>
+  :root { --bg: #F8FAFC; --text: #0F172A; --muted: #475569; --primary: #2563EB; --surface: #FFFFFF; --border: #E2E8F0; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0B1120; --text: #E5E7EB; --muted: #94A3B8; --primary: #3B82F6; --surface: #111827; --border: #2B3546; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+  h1 { margin: 0 0 4px; font-size: 28px; }
+  h2 { font-size: 20px; margin-top: 28px; }
+  .muted { color: var(--muted); }
+  a { color: var(--primary); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Chính sách quyền riêng tư của SyncDeck</h1>
+  <p class="muted">Privacy Policy · Cập nhật: 29/10/2026</p>
+
+  <h2>1. SyncDeck là gì</h2>
+  <p>SyncDeck là ứng dụng Windows dùng cá nhân. Ứng dụng chạy hoàn toàn trên máy tính của người dùng và chỉ làm việc với Google Drive của chính người dùng đã đăng nhập. Không có máy chủ SyncDeck nào nhận, lưu hay xử lý dữ liệu của người dùng.</p>
+
+  <h2>2. Dữ liệu Google mà SyncDeck truy cập</h2>
+  <ul>
+    <li><strong>Tên và địa chỉ email</strong> của tài khoản Google: để hiển thị tài khoản đang đăng nhập.</li>
+    <li><strong>Tệp và thư mục Google Drive</strong> (quyền <code>https://www.googleapis.com/auth/drive</code>): để liệt kê, tải lên, tải xuống, tạo thư mục, đổi tên, chuyển vào thùng rác, tạo link chia sẻ và đồng bộ thư mục — chỉ khi người dùng ra lệnh hoặc theo cặp đồng bộ do người dùng tự thiết lập.</li>
+    <li><strong>Dung lượng Drive</strong>: để hiển thị dung lượng đã dùng.</li>
+  </ul>
+
+  <h2>3. Cách dữ liệu được sử dụng và lưu trữ</h2>
+  <ul>
+    <li>Dữ liệu Google chỉ được dùng để thực hiện các thao tác người dùng yêu cầu trong ứng dụng.</li>
+    <li>Token đăng nhập được mã hoá bằng Windows DPAPI và lưu trên máy tính của người dùng (<code>%APPDATA%\SyncDeck</code>).</li>
+    <li>Danh sách tác vụ và chỉ mục đồng bộ được lưu cục bộ trên máy tính của người dùng.</li>
+    <li>SyncDeck <strong>không</strong> gửi dữ liệu Google tới bất kỳ máy chủ, bên thứ ba, dịch vụ quảng cáo hay phân tích nào, và không dùng dữ liệu để huấn luyện mô hình AI.</li>
+  </ul>
+
+  <h2>4. Chia sẻ dữ liệu</h2>
+  <p>SyncDeck không bán, cho thuê hay chia sẻ dữ liệu người dùng. Link chia sẻ Google Drive chỉ được tạo khi người dùng bấm "Sao chép link chia sẻ" và xác nhận.</p>
+
+  <h2>5. Thu hồi quyền và xoá dữ liệu</h2>
+  <ul>
+    <li>Gỡ tài khoản trong mục Cài đặt của SyncDeck sẽ xoá token đã lưu trên máy.</li>
+    <li>Có thể thu hồi quyền bất cứ lúc nào tại <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Xoá thư mục <code>%APPDATA%\SyncDeck</code> sẽ xoá toàn bộ dữ liệu cục bộ của ứng dụng.</li>
+  </ul>
+
+  <h2>6. Tuân thủ chính sách Google API</h2>
+  <p>Việc SyncDeck sử dụng và chuyển giao thông tin nhận từ Google API tuân thủ <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, bao gồm các yêu cầu Limited Use.</p>
+
+  <h2>7. Liên hệ</h2>
+  <p><a href="mailto:moneylandh@gmail.com">moneylandh@gmail.com</a></p>
+
+  <hr>
+  <p class="muted"><strong>English summary:</strong> SyncDeck is a personal Windows app that runs entirely on the user's computer. It accesses the signed-in user's Google account name, email and Google Drive files only to perform actions the user requests. OAuth tokens are encrypted with Windows DPAPI and stored locally. No data is sent to any server or third party. SyncDeck's use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. Contact: moneylandh@gmail.com.</p>
+</main>
+</body>
+</html>
